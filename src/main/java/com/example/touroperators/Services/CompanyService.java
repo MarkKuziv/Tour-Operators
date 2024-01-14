@@ -52,8 +52,8 @@ public class CompanyService {
 
     }
 
-    public ResponseEntity<String> addCompany(Company company){
-        companyRepository.save(company);
-        return new ResponseEntity<>("Added", HttpStatus.OK);
-    }
+        public ResponseEntity<String> addCompany(Company company){
+            companyRepository.save(company);
+            return new ResponseEntity<>("Added", HttpStatus.OK);
+        }
 }
